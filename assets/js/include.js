@@ -1,15 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Include header
-  fetch("partials/header.html")
-    .then(res => res.text())
+  // Header
+  fetch("partial/header.html")
+    .then(response => response.text())
     .then(data => {
       document.getElementById("include-header").innerHTML = data;
-    });
+    })
+    .catch(error => console.error("Không load được header:", error));
 
-  // Include footer
+  // Footer
   fetch("partials/footer.html")
-    .then(res => res.text())
+    .then(response => response.text())
     .then(data => {
       document.getElementById("include-footer").innerHTML = data;
-    });
+    })
+    .catch(error => console.error("Không load được footer:", error));
 });
