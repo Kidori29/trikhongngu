@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giới thiệu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kho Tài Liệu Học Tập | Tài liệu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/docs.css">
 </head>
 <body>
-  <header>
+  <!-- Include Header -->
+  <!--#include virtual="partials/header.html" -->
+
+  <!-- Trang Tài liệu -->
+  <section class="docs-page">
     <div class="container">
-      <h1>📚 Kho Tài Liệu</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="docs.html">Tài liệu</a></li>
-          <li><a href="about.html" class="active">Giới thiệu</a></li>
-          <li><a href="contact.html">Liên hệ</a></li>
-        </ul>
-      </nav>
+      <div class="docs-header">
+        <h1>Tài liệu học tập</h1>
+        <p>Khám phá hàng ngàn tài liệu học tập chất lượng từ cộng đồng</p>
+      </div>
+      
+      <div class="docs-grid">
+        <!-- Tài liệu items... -->
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main class="container">
-    <h2>📖 Giới thiệu</h2>
-    <p>Trang web này được tạo ra nhằm chia sẻ các tài liệu học tập chất lượng cho sinh viên ngành Công nghệ Thông tin. Nội dung được chọn lọc từ kinh nghiệm học tập thực tế, sách tham khảo và nguồn tài liệu uy tín.</p>
-    <p>Mọi tài liệu đều miễn phí và được cập nhật thường xuyên.</p>
-  </main>
+  <!-- Include Footer -->
+  <!--#include virtual="partials/footer.html" -->
 
-  <footer>
-    <p>&copy; 2025 Kho Tài Liệu Học Tập. All rights reserved.</p>
-  </footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
