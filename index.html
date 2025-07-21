@@ -3,35 +3,367 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kho Tài Liệu Học Tập</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Kho Tài Liệu Học Tập | Nguồn tri thức miễn phí</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
     <div class="container">
-      <h1>📚 Kho Tài Liệu</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="docs.html">Tài liệu</a></li>
-          <li><a href="about.html">Giới thiệu</a></li>
-          <li><a href="contact.html">Liên hệ</a></li>
-        </ul>
-      </nav>
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="logo-text">Trí<span>KhôngNgủ</span></div>
+        </a>
+        
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Trang chủ</a></li>
+            <li><a href="docs.html"><i class="fas fa-book"></i> Tài liệu</a></li>
+            <li><a href="categories.html"><i class="fas fa-list"></i> Danh mục</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> Giới thiệu</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="search-bar">
+        <input type="text" placeholder="Tìm kiếm tài liệu, môn học, chuyên ngành...">
+        <button><i class="fas fa-search"></i> Tìm kiếm</button>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Chia sẻ tài liệu học tập miễn phí</h2>
-      <p>Các môn học đại cương, chuyên ngành, lập trình, thuật toán,...</p>
-      <a href="docs.html" class="btn">Xem tài liệu</a>
-    </section>
-  </main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Chia sẻ tri thức, kết nối cộng đồng</h2>
+      <p>Kho tài liệu học tập miễn phí với hàng ngàn tài liệu chất lượng từ các môn học đại cương đến chuyên ngành</p>
+      <div class="hero-buttons">
+        <a href="docs.html" class="btn"><i class="fas fa-book"></i> Xem tài liệu ngay</a>
+        <a href="upload.html" class="btn btn-secondary"><i class="fas fa-cloud-upload-alt"></i> Đóng góp tài liệu</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+      <div class="section-title">
+        <h2>Vì sao chọn chúng tôi?</h2>
+        <p>Kho Tài Liệu mang đến giải pháp học tập toàn diện cho sinh viên</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Tài liệu phong phú</h3>
+          <p>Hơn 10,000+ tài liệu học tập chất lượng từ các môn học đại cương đến chuyên ngành, được cập nhật liên tục.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <h3>Cộng đồng học tập</h3>
+          <p>Kết nối với hàng ngàn sinh viên trên khắp cả nước, chia sẻ kinh nghiệm và hỗ trợ nhau trong học tập.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>Hoàn toàn miễn phí</h3>
+          <p>Tất cả tài liệu được chia sẻ miễn phí, không giới hạn truy cập và tải xuống. Tri thức là để chia sẻ!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Categories -->
+  <section class="categories">
+    <div class="container">
+      <div class="section-title">
+        <h2>Danh mục nổi bật</h2>
+        <p>Khám phá các lĩnh vực học tập phổ biến nhất</p>
+      </div>
+      
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Công nghệ thông tin</h3>
+          <p>Lập trình, Cơ sở dữ liệu, Mạng máy tính...</p>
+          <div class="doc-count">1,240 tài liệu</div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <h3>Toán học</h3>
+          <p>Giải tích, Đại số, Xác suất thống kê...</p>
+          <div class="doc-count">980 tài liệu</div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-flask"></i>
+          </div>
+          <h3>Khoa học tự nhiên</h3>
+          <p>Vật lý, Hóa học, Sinh học...</p>
+          <div class="doc-count">760 tài liệu</div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-globe-asia"></i>
+          </div>
+          <h3>Ngoại ngữ</h3>
+          <p>Tiếng Anh, Tiếng Nhật, Tiếng Hàn...</p>
+          <div class="doc-count">1,050 tài liệu</div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3>Văn học</h3>
+          <p>Tác phẩm văn học, Lý luận văn học...</p>
+          <div class="doc-count">520 tài liệu</div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Kinh tế</h3>
+          <p>Kinh tế vi mô, Kinh tế vĩ mô, Quản trị...</p>
+          <div class="doc-count">890 tài liệu</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Documents -->
+  <section class="documents">
+    <div class="container">
+      <div class="documents-header">
+        <div class="section-title">
+          <h2>Tài liệu mới cập nhật</h2>
+          <p>Khám phá các tài liệu mới nhất được cộng đồng chia sẻ</p>
+        </div>
+        <a href="docs.html" class="btn"><i class="fas fa-arrow-right"></i> Xem tất cả</a>
+      </div>
+      
+      <div class="documents-grid">
+        <div class="document-card">
+          <div class="document-image">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+          <div class="document-content">
+            <div class="document-meta">
+              <span><i class="far fa-clock"></i> 2 ngày trước</span>
+              <span class="document-tag">Công nghệ thông tin</span>
+            </div>
+            <h3>Giáo trình Lập trình hướng đối tượng</h3>
+            <p class="document-description">Tài liệu tổng hợp kiến thức về OOP với Java, kèm bài tập thực hành chi tiết.</p>
+            <div class="document-actions">
+              <span><i class="fas fa-download"></i> 120 lượt</span>
+              <span><i class="fas fa-star"></i> 4.8</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="document-card">
+          <div class="document-image">
+            <i class="fas fa-file-word"></i>
+          </div>
+          <div class="document-content">
+            <div class="document-meta">
+              <span><i class="far fa-clock"></i> 5 ngày trước</span>
+              <span class="document-tag">Toán học</span>
+            </div>
+            <h3>Bài tập Giải tích 1 có lời giải</h3>
+            <p class="document-description">Tổng hợp các dạng bài tập từ cơ bản đến nâng cao môn Giải tích 1.</p>
+            <div class="document-actions">
+              <span><i class="fas fa-download"></i> 98 lượt</span>
+              <span><i class="fas fa-star"></i> 4.7</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="document-card">
+          <div class="document-image">
+            <i class="fas fa-file-powerpoint"></i>
+          </div>
+          <div class="document-content">
+            <div class="document-meta">
+              <span><i class="far fa-clock"></i> 1 tuần trước</span>
+              <span class="document-tag">Kinh tế</span>
+            </div>
+            <h3>Slide bài giảng Kinh tế vĩ mô</h3>
+            <p class="document-description">Slide bài giảng chi tiết kèm ví dụ thực tế môn Kinh tế vĩ mô.</p>
+            <div class="document-actions">
+              <span><i class="fas fa-download"></i> 85 lượt</span>
+              <span><i class="fas fa-star"></i> 4.9</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="document-card">
+          <div class="document-image">
+            <i class="fas fa-file-excel"></i>
+          </div>
+          <div class="document-content">
+            <div class="document-meta">
+              <span><i class="far fa-clock"></i> 3 ngày trước</span>
+              <span class="document-tag">Quản trị</span>
+            </div>
+            <h3>Bộ công cụ quản lý dự án</h3>
+            <p class="document-description">File Excel quản lý dự án với các template và công cụ hữu ích.</p>
+            <div class="document-actions">
+              <span><i class="fas fa-download"></i> 67 lượt</span>
+              <span><i class="fas fa-star"></i> 4.5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">10,000+</div>
+          <div class="stat-label">Tài liệu học tập</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">25,000+</div>
+          <div class="stat-label">Thành viên</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">150+</div>
+          <div class="stat-label">Chuyên ngành</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500,000+</div>
+          <div class="stat-label">Lượt tải xuống</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Sẵn sàng tham gia cộng đồng?</h2>
+        <p>Đăng ký ngay để truy cập không giới hạn tài liệu và đóng góp chia sẻ kiến thức của bạn với cộng đồng</p>
+        <a href="register.html" class="btn"><i class="fas fa-user-plus"></i> Đăng ký tài khoản</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; Trí Không Ngủ</p>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Kho Tài Liệu</h3>
+          <p>Nền tảng chia sẻ tài liệu học tập miễn phí, kết nối cộng đồng sinh viên trên toàn quốc.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Liên kết nhanh</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Trang chủ</a></li>
+            <li><a href="docs.html"><i class="fas fa-chevron-right"></i> Tài liệu</a></li>
+            <li><a href="categories.html"><i class="fas fa-chevron-right"></i> Danh mục</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> Giới thiệu</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Liên hệ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Danh mục phổ biến</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Công nghệ thông tin</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Toán học</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Khoa học tự nhiên</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Ngoại ngữ</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Kinh tế</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Liên hệ</h3>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Số 1, Đại Cồ Việt, Hà Nội</a></li>
+            <li><a href="mailto:info@khotailieu.edu.vn"><i class="fas fa-envelope"></i> info@khotailieu.edu.vn</a></li>
+            <li><a href="tel:+84987654321"><i class="fas fa-phone"></i> +84 987 654 321</a></li>
+            <li><a href="#"><i class="fas fa-globe"></i> www.khotailieu.edu.vn</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kho Tài Liệu Học Tập của Trí Không Ngủ. Thiết kế bởi <span>Trí Không Ngủ</span></p>
+      </div>
+    </div>
   </footer>
+  
+  <!-- Back to top button -->
+  <button id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  
+  <script>
+    // Back to top button functionality
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // Category card hover effect
+    const categoryCards = document.querySelectorAll('.category-card');
+    categoryCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-10px)';
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0)';
+      });
+    });
+  </script>
 </body>
 </html>
-
